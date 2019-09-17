@@ -103,6 +103,7 @@
   <component name="ProjectId" id="1QeVG2gjdzplowWQUJm6BMRgB53" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -128,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1568130949872</updated>
       <workItem from="1568130952176" duration="4892000" />
-      <workItem from="1568740626250" duration="357000" />
+      <workItem from="1568740626250" duration="620000" />
     </task>
     <servers />
   </component>
