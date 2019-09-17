@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42767abb-2a1a-4027-b392-4937ad5682af" name="Default Changelist" comment="" />
+    <list default="true" id="42767abb-2a1a-4027-b392-4937ad5682af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +134,8 @@
       <option name="presentableId" value="Default" />
       <updated>1568130949872</updated>
       <workItem from="1568130952176" duration="4892000" />
-      <workItem from="1568740626250" duration="620000" />
+      <workItem from="1568740626250" duration="5893000" />
+      <workItem from="1568746948293" duration="3322000" />
     </task>
     <servers />
   </component>
