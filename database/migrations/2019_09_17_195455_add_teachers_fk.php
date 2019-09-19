@@ -25,9 +25,8 @@ class AddTeachersFk extends Migration
      */
     public function down()
     {
-        Schema::drop('teachers');
-//        Schema::table('teachers',function (Blueprint $table){
-//            $table->dropForeign('department_id');
-//        });
+        Schema::table('teachers',function (Blueprint $table){
+            $table->dropForeign('department_id');
+        });
     }
 }
