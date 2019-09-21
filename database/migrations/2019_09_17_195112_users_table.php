@@ -17,7 +17,7 @@ class UsersTable extends Migration
             $table->bigIncrements('id')->unsigned();
             $table->string('login');
             $table->string('password');
-            $table->string('mail');
+            $table->string('email');
             $table->boolean('is_publish');
             $table->integer('role');
             $table->timestamps();
