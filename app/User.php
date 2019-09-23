@@ -13,6 +13,7 @@ class User extends Authenticatable
         'email',
     ];
 
+
     protected $attributes = [
         'role' => 1,
         'is_publish' => 1
@@ -24,3 +25,4 @@ class User extends Authenticatable
     }
 
 }
+
