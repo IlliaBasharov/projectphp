@@ -13,11 +13,6 @@
 1. Basic & general
 ======================================== */
 
-/**, :after, :before*/
-/*{*/
-/*    box-sizing: content-box !important;*/
-/*}*/
-
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
@@ -786,6 +781,7 @@ section#services {
 
 /*========== works ==================*/
 
+
 ul.filter {
 	list-style:none;
 	margin-left:0;
@@ -1345,21 +1341,4 @@ img.pull-left{
 	.tweet span {
 		line-height:1.5em;
 	}
-}
-
-input[type="radio"], input[type="checkbox"]
-{
-    margin: 4px -15px 0 !important;
-}
-
-.navbar-fixed-top, .navbar-fixed-bottom
-{
-    display: block;
-}
-
-
-.pb-4, .py-4
-{
-    padding-bottom: 10rem !important;
-    padding-top: 10rem !important;
 }

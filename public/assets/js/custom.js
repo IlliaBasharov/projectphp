@@ -88,15 +88,15 @@ jQuery(document).ready(function($) {
   $('#bottom').parallax("50%", 0.1);
 
   //navigation
-  $('.navigation').onePageNav({
-    begin: function() {
-      console.log('start');
-    },
-    end: function() {
-      console.log('stop');
-    },
-    scrollOffset: 0
-  });
+  // $('.navigation').onePageNav({
+  //   begin: function() {
+  //     console.log('start');
+  //   },
+  //   end: function() {
+  //     console.log('stop');
+  //   },
+  //   scrollOffset: 0
+  // });
 
 });
 

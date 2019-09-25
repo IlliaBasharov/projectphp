@@ -24,6 +24,7 @@
   <link rel="shortcut icon" href="ico/favicon.ico" />
 
 
+
 </head>
 
 <body>
@@ -38,12 +39,41 @@
           <div class="navigation">
             <nav>
               <ul class="nav pull-right">
-                <li class="current"><a href="#intro">Главная</a></li>
+                <li class="current"><a href="{{ url('/') }}">Главная</a></li>
                 <li><a href="#about">Города</a></li>
                 <li><a href="#services">Универы</a></li>
                 <li><a href="#works">Преподы</a></li>
                   <li><a href="#">Рейтинг </a></li>
                   <li> <a href="#">О нас </a></li>
+                @guest
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">{{ __('Войти') }}</a>
+                  </li>
+                  @if (Route::has('register'))
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ route('register') }}">{{ __('Регистрация') }}</a>
+                    </li>
+
+                  @endif
+                @else
+                  <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                      {{ Auth::user()->name }} <span class="caret"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{ route('logout') }}"
+                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                      </a>
+
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                      </form>
+                    </div>
+                  </li>
+                @endguest
+
               </ul>
             </nav>
           </div>
@@ -79,6 +109,8 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
   <!-- end section about -->
   <!-- section services -->
@@ -174,8 +206,11 @@
 
           <!-- end contact form -->
         </div>
-
+      </div>
+    </div>
   <!-- end section contact -->
+
+  </section>
 
   <footer>
     <div class="verybottom">
@@ -190,12 +225,6 @@
                 &copy; Vesperr labs Inc - All right reserved
               </p>
               <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Vesperr
-                -->
                 Created by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
               </div>
             </div>
