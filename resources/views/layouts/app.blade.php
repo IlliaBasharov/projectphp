@@ -48,11 +48,11 @@
                         <nav>
                             <ul class="nav pull-right">
                                 <li class="current"><a href="{{ url('/') }}">Главная</a></li>
-                                <li><a href="#about">Города</a></li>
-                                <li><a href="#services">Универы</a></li>
-                                <li><a href="#works">Преподы</a></li>
-                                <li><a href="#">Рейтинг </a></li>
-                                <li><a href="#">О нас </a></li>
+                                <li><a href="{{ url('city') }}">Города</a></li>
+                                <li><a href="{{ url('university') }}">Универы</a></li>
+                                <li><a href="{{ url('teacher') }}">Преподы</a></li>
+                                <li><a href="{{ url('rating') }}">Рейтинг </a></li>
+                                <li><a href="{{ url('about') }}">О нас </a></li>
                                 @guest
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('login') }}">{{ __('Вход') }}</a>
