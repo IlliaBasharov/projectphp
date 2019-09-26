@@ -10,11 +10,11 @@
                     <nav>
                         <ul class="nav pull-right">
                             <li class="current"><a href="{{ url('/') }}">Главная</a></li>
-                            <li><a href="{{ url('city') }}">Города</a></li>
-                            <li><a href="{{ url('university') }}">Универы</a></li>
-                            <li><a href="{{ url('teacher') }}">Преподы</a></li>
-                            <li><a href="{{ url('rating') }}">Рейтинг </a></li>
-                            <li><a href="{{ url('about') }}">О нас </a></li>
+                            <li><a href="{{ route('city') }}">Города</a></li>
+                            <li><a href="{{ route('university') }}">Универы</a></li>
+                            <li><a href="{{ route('teacher') }}">Преподы</a></li>
+                            <li><a href="{{ route('rating') }}">Рейтинг </a></li>
+                            <li><a href="{{ route('about') }}">О нас </a></li>
                             @guest
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Войти') }}</a>
