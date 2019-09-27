@@ -22,6 +22,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/city', 'CityController@index')->name('city');
+Route::get('city/{id}','CityController@show')->name('show');
 
 Route::get('/university', 'UniversityController@index')->name('university');
 
