@@ -1,30 +1,24 @@
 <header>
     <!-- start top -->
-    <div id="topnav" class="navbar fixed-top default">
+    <div id="topnav" class="navbar default">
         <div class="navbar-inner">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="logo">
                     <a href="index.html"><img src="assets/img/logo.png" alt=""/></a>
                 </div>
                 <div class="navigation">
                     <nav>
                         <ul class="nav pull-right">
-                            <li class="current"><a href="{{ url('/') }}">Главная</a></li>
-                            <li><a href="{{ url('city') }}">Города</a></li>
-                            <li><a href="{{ url('university') }}">Универы</a></li>
-                            <li><a href="{{ url('teacher') }}">Преподы</a></li>
-                            <li><a href="{{ url('rating') }}">Рейтинг </a></li>
-                            <li><a href="{{ url('about') }}">О нас </a></li>
+                            <li class="{{ (request()->is('/')) ? 'current' : '' }}"><a href="{{ url('/') }}">Главная</a></li>
+                            <li class="{{ (request()->is('city')) ? 'current' : '' }}"><a href="{{ url('city') }}">Города</a></li>
+                            <li class="{{ (request()->is('university')) ? 'current' : '' }}"><a href="{{ url('university') }}">Универы</a></li>
+                            <li class="{{ (request()->is('teacher')) ? 'current' : '' }}"><a href="{{ url('teacher') }}">Преподы</a></li>
+                            <li class="{{ (request()->is('rating')) ? 'current' : '' }}"><a href="{{ url('rating') }}">Рейтинг </a></li>
+                            <li class="{{ (request()->is('about')) ? 'current' : '' }}"><a href="{{ url('about') }}">О нас </a></li>
                             @guest
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Войти') }}</a>
-                                </li>
+                                <li class="{{ (request()->is('login')) ? 'current' : '' }}"><a href="{{ route('login') }}">{{ __('Войти') }}</a></li>
                                 @if (Route::has('register'))
-                                    <li class="nav-item">
-                                        <a class="nav-link"
-                                           href="{{ route('register') }}">{{ __('Регистрация') }}</a>
-                                    </li>
-
+                                    <li class="{{ (request()->is('register')) ? 'current' : '' }}"><a href="{{ route('register') }}">{{ __('Регистрация') }}</a></li>
                                 @endif
                             @else
                                 <li class="nav-item dropdown">
