@@ -844,7 +844,7 @@ ul.filter li.active a{
 	position:relative;
 	padding:0;
 	overflow:hidden;
-	border: 0;
+	border:nonw;
 }
 
 .portfolio-area .image-wrapp img {
