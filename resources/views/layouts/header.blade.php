@@ -1,6 +1,6 @@
 <header>
     <!-- start top -->
-    <div id="topnav" class="navbar default">
+    <div id="topnav" class="navbar fixed-top default">
         <div class="navbar-inner">
             <div class="container">
                 <div class="logo">
