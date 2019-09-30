@@ -23,7 +23,7 @@
     <!-- Javascript Library Files -->
     <script src="/assets/js/jquery.min.js"></script>
     {{--    <script src="assets/js/jquery.easing.js"></script>--}}
-    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/parallax/jquery.parallax-1.1.3.js"></script>
     <script src="/assets/js/jquery.nav.js"></script>
     <script src="/assets/js/prettyPhoto/jquery.prettyPhoto.js"></script>

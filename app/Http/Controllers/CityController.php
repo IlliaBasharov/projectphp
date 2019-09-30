@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\DB;
+use App\City;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -10,7 +10,7 @@ class CityController extends Controller
 {
     public function index()
     {
-        $cities = DB::table('cities')->paginate(10);
+        $cities = City::query()->where('is_publish', '1')->get();
         return view('city', ['cities' => $cities]);
     }
 

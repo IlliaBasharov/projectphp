@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700" rel="stylesheet"/>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="/assets/css/bootstrap.css" rel="stylesheet"/>
+{{--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet"/>
     <link href="/assets/css/prettyPhoto.css" rel="stylesheet"/>
     <link href="/assets/css/animate.css" rel="stylesheet"/>
